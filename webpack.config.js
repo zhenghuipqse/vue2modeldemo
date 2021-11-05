@@ -46,7 +46,26 @@ module.exports = {
                     'vue-style-loader',
                     'css-loader'
                 ]
-            }
+            },
+            {
+                test: /\.sass$/,
+                use: ["vue-style-loader", "css-loader", "sass-loader?indentedSyntax"]
+            },
+            {
+                test: /\.less$/,
+                use: [
+                    "vue-style-loader",
+                    "css-loader",
+                    {
+                        loader: "less-loader",
+                        options: {
+                            lessOptions: {
+                                javascriptEnabled: true
+                            }
+                        }
+                    }
+                ]
+            },
         ],
 
 

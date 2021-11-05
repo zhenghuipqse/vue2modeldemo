@@ -26,3 +26,15 @@ window.$vm = new Vue({
     render: h => h(App)
 });
 
+/*window.$vm = new Vue({
+    components: {
+        App
+    },
+    store,
+    template: "<App/>",
+    renderError(h, err) {
+        console.log(err);
+        return h("pre", { style: { color: "red" } }, err.stack);
+    }
+}).$mount("#app");*/
+
