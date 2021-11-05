@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "1",
+    "ico": "/assets/modeltype/1.png"
+  },
+  {
+    "id": 2,
+    "name": "2",
+    "ico": "/assets/modeltype/2.png"
+  },
+  {
+    "id": 3,
+    "name": "3",
+    "ico": "/assets/modeltype/1.png"
+  },
+  {
+    "id": 4,
+    "name": "4",
+    "ico": "/assets/modeltype/3.png"
+  },
+  {
+    "id": 5,
+    "name": "5",
+    "ico": "/assets/modeltype/1.png"
+  },
+  {
+    "id": 6,
+    "name": "6",
+    "ico": "/assets/modeltype/1.png"
+  },
+  {
+    "id": 7,
+    "name": "7",
+    "ico": "/assets/modeltype/2.png"
+  },
+  {
+    "id": 8,
+    "name": "8",
+    "ico": "/assets/modeltype/1.png"
+  },
+  {
+    "id": 9,
+    "name": "绿9",
+    "ico": "/assets/modeltype/1.png"
+  }
+]

@@ -1,0 +1,17 @@
+.DS_Store
+dist/
+build/
+yuidocs/
+!build/icons
+node_modules/
+*.log
+npm-debug.log.*
+thumbs.db
+!.gitkeep
+.idea/*
+*dev.bat
+.vscode/
+.vs/
+.npmrc
+**/__snapshots__/
+
