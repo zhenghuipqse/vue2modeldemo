@@ -1,0 +1,58 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# 创建的文件:31.03.2020 18:03:35
+
+newmtl M_AJia_shafa_15456235466_01
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_AJia_shafa_15456235466_Color_1.jpg
+	map_Kd T_AJia_shafa_15456235466_Color_1.jpg
+
+newmtl M_AJia_shafa_15456235466_03
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_AJia_shafa_15456235466_Color_1.jpg
+	map_Kd T_AJia_shafa_15456235466_Color_1.jpg
+
+newmtl M_AJia_shafa_15456235466_02
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_AJia_shafa_15456235466_Color_2.jpg
+	map_Kd T_AJia_shafa_15456235466_Color_2.jpg
+
+newmtl M_AJia_shafa_15456235466_Shadow
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_AJia_shafa_15456235466_Shadow.png
+	map_Kd T_AJia_shafa_15456235466_Shadow.png

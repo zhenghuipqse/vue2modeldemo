@@ -1,5 +1,5 @@
 <template>
-    <img class="model-type-ico"
+    <img class="model-type-ico" @click="openModelList"
             :src="modeltypeobj.ico">
 </template>
 
@@ -7,6 +7,11 @@
     export default {
         name: "ModelTypeItem",
         props:["modeltypeobj"],
+        methods:{
+            openModelList(){
+                eventBus.$emit("showModelListView",this.modeltypeobj);
+            }
+        }
     }
 </script>
 

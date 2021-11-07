@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "1",
+    "ico": "/assets/modeltype/1.png",
+    "url":"/assets/textures/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "2",
+    "ico": "/assets/textures/2.png",
+    "url":"/assets/textures/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "3",
+    "ico": "/assets/textures/1.png",
+    "url":"/assets/textures/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "4",
+    "ico": "/assets/textures/3.png",
+    "url":"/assets/textures/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "5",
+    "ico": "/assets/textures/1.png",
+    "url":"/assets/textures/5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "6",
+    "ico": "/assets/textures/1.png",
+    "url":"/assets/textures/6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "7",
+    "ico": "/assets/textures/2.png",
+    "url":"/assets/textures/7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "8",
+    "ico": "/assets/textures/8.png",
+    "url":"/assets/textures/8.jpg"
+  },
+  {
+    "id": 9,
+    "name": "绿9",
+    "ico": "/assets/textures/1.png",
+    "url":"/assets/textures/9.jpg"
+  }
+]

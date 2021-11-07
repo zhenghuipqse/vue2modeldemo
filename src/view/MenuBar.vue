@@ -16,7 +16,7 @@
         name: "MenuBar",
         data() {
             return {
-                greeting: 'Hello World!'
+
             }
         },
         computed: {

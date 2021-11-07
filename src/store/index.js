@@ -5,7 +5,8 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         count: 0,
-        menuindex:0
+        menuindex:0,
+        isShowModelList:false,
 
     },
     // commit触发，只能同步
@@ -17,6 +18,10 @@ export default new Vuex.Store({
 
         updatemenuindex(state, index){
             state.menuindex = index;
+        },
+
+        showModelList(state, show){
+            state.isShowModelList = show;
         }
     },
 
