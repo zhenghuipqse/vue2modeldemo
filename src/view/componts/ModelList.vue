@@ -1,8 +1,7 @@
 <template>
     <div id="model-list-view" v-show="isShowModelList">
-        <Button :size="'large'" type="primary" @click="hideModelList">
-            <Icon type="ios-arrow-back" />
-            返回
+        <Button type="text" @click="hideModelList">
+            <Icon size="24" type="ios-arrow-back"></Icon>
         </Button>
         <div id="model-list">
             <model-view

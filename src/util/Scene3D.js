@@ -1,14 +1,18 @@
 import * as THREE from "three";
 import {OrbitControls} from "three/examples/jsm/controls/OrbitControls";
+import {materialpi,materialbu} from "@/util/TextureEnum";
+import effectController from "@/util/effectController"
 
 export default class Scene3D {
-    constructor(canvas) {
+    constructor() {
 
-
-        this.canvas = canvas;
-        this.width = canvas.width;
-        this.height = canvas.height;
+        this.width = window.innerWidth;
+        this.height =  window.innerHeight-132;
         this.init(this.width, this.height);
+
+        this.initControls();
+
+        this.initLights(effectController);
     }
 
     init(w, h) {
@@ -21,7 +25,7 @@ export default class Scene3D {
         this.scene.background = new THREE.Color(0xf0f0f0);
 
 
-        this.renderer = new THREE.WebGLRenderer({canvas:this.canvas, antialias: true});
+        this.renderer = new THREE.WebGLRenderer({ antialias: true});
         this.renderer.autoClear = false;
         this.renderer.setPixelRatio(window.devicePixelRatio);
         this.renderer.setSize(w, h);
@@ -30,11 +34,92 @@ export default class Scene3D {
         // this.renderer.shadowMap.enabled = true;
         this.renderer.outputEncoding = THREE.sRGBEncoding;
 
+        this.canvas = this.renderer.domElement;
 
-        // this.raycaster = new THREE.Raycaster();
-        // this.renderer.domElement.addEventListener("click", onClick);
-        // window.addEventListener('resize', onWindowResize);
 
+        this.raycaster = new THREE.Raycaster();
+        this.canvas.addEventListener("click", this.onClick.bind(this));
+        window.addEventListener('resize', this.onWindowResize.bind(this));
+
+    }
+
+    onClick(e){
+
+        e.preventDefault();
+        if (!this.currentmodel)
+            return;
+        let mouse = new THREE.Vector2();
+        mouse.x = ( e.offsetX / this.canvas.offsetWidth ) * 2 - 1;
+        mouse.y = -( e.offsetY / this.canvas.offsetHeight ) * 2 + 1;
+
+        this.raycaster.setFromCamera(mouse, this.camera);
+        let intersects = this.raycaster.intersectObject(this.currentmodel, true);
+
+        if(this.selcttedmesh){
+            let mesh = this.getMeshByName();
+            if(mesh){
+                mesh.visible = false;
+            }
+            this.selcttedmesh = null;
+            this.selcttedmeshName = null;
+            this.phongMaterial = null;
+        }
+        if (intersects.length > 0) {
+            let selectedObject = intersects[0].object;
+            // outlinePass.selectedObjects = [selectedObject];
+            this.selcttedmesh = selectedObject;
+            this.selcttedmeshName = selectedObject.name;
+            this.phongMaterial = this.selcttedmesh.material;
+
+
+            let mesh = this.getMeshByName();
+            if(mesh){
+
+                mesh.visible = true;
+            }
+        }
+
+        this.render();
+    }
+
+    changeTexture(val){
+        if(this.selcttedmesh && this.selcttedmesh.material){
+            //texture
+            let texture = new THREE.Texture();
+            texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
+            let loader = new THREE.ImageLoader();
+            loader.load(val, image => {
+                texture.image = image;
+
+                let phongMaterial = this.selcttedmesh.material;
+                if ( Array.isArray( phongMaterial ) ) {
+                    for(let i=0;i<phongMaterial.length;i++){
+                        let temp = phongMaterial[i];
+                        temp.map = texture;
+                        temp.needsUpdate = true;
+                    }
+                }else{
+                    phongMaterial.map = texture;
+                }
+
+                texture.needsUpdate = true;
+                this.selcttedmesh.material.needsUpdate = true;
+                this.render();
+            });
+
+        }
+    }
+
+    getMeshByName(){
+        let aaa= null;
+        if(this.selcttedmeshName && this.currentmodelGezi){
+            this.currentmodelGezi.traverse(mesh => {
+                if(mesh instanceof THREE.Mesh && mesh.name == this.selcttedmeshName){
+                    aaa = mesh;
+                }
+            })
+        }
+        return aaa;
     }
 
     initLights(effectController){
@@ -99,8 +184,8 @@ export default class Scene3D {
     }
 
     initControls() {
-        this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-        this.controls.addEventListener('change', this.render); // use if there is no animation loop
+        this.controls = new OrbitControls(this.camera, this.canvas);
+        this.controls.addEventListener('change', this.render.bind(this)); // use if there is no animation loop
         this.controls.minDistance = 2;
         this.controls.target.set(0, 0, -0.2);
         this.controls.update();
@@ -108,10 +193,13 @@ export default class Scene3D {
 
     onWindowResize() {
 
-        this.camera.aspect = window.innerWidth / window.innerHeight;
+        this.width = window.innerWidth;
+        this.height =  window.innerHeight-132;
+
+        this.camera.aspect = this.width / this.height;
         this.camera.updateProjectionMatrix();
 
-        this.renderer.setSize( window.innerWidth, window.innerHeight );
+        this.renderer.setSize( this.width, this.height );
 
         this.render();
 
@@ -135,7 +223,7 @@ export default class Scene3D {
         let miny = Number.MAX_VALUE;
         let minz = Number.MAX_VALUE;
         let meshindex = 1;
-        modelObj.traverse(function(mesh){
+        modelObj.traverse(mesh => {
             if(mesh instanceof THREE.Mesh){
                 // mesh.castShadow = true;
                 mesh.geometry.computeBoundingBox();
@@ -231,7 +319,7 @@ export default class Scene3D {
 
 
         this.currentmodelGezi = modelObj.clone();
-        this.currentmodelGezi.traverse(function(mesh){
+        this.currentmodelGezi.traverse(mesh => {
             if(mesh instanceof THREE.Mesh){
 
                 let material = new THREE.MeshBasicMaterial();

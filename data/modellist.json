@@ -3,9 +3,9 @@
     "id": 1,
     "name": "沙发1",
     "path": "/assets/models/shafa/",
-    "mtl": "Quanyou_xiegui_67285719242.mtl",
-    "obj": "Quanyou_xiegui_67285719242.obj",
-    "ico": "/assets/modeltype/1.png"
+    "mtl": "Ajia_shafa_10632816835.mtl",
+    "obj": "Ajia_shafa_10632816835.obj",
+    "ico": "/assets/modelico/1.png"
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "path": "/assets/models/shafa2/",
     "mtl": "AJia_shafa_5561759.mtl",
     "obj": "AJia_shafa_5561759.obj",
-    "ico": "/assets/modeltype/2.png"
+    "ico": "/assets/modelico/2.png"
   },
   {
     "id": 3,
@@ -21,6 +21,6 @@
     "path": "/assets/models/shafa3/",
     "mtl": "AJia_shafa_15456235466.mtl",
     "obj": "AJia_shafa_15456235466.obj",
-    "ico": "/assets/modeltype/3.png"
+    "ico": "/assets/modelico/3.png"
   }
 ]

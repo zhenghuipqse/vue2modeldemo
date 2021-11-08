@@ -1,12 +1,10 @@
 <template>
     <div>
-        <div>{{count}}</div>
-
-        <input v-model="count">
         <view3d ></view3d>
         <menu-bar/>
         <bottom-bar/>
         <model-list/>
+        <texturex-frame></texturex-frame>
     </div>
 </template>
 
@@ -15,13 +13,15 @@
     import BottomBar from "@/view/BottomBar";
     import View3d from "@/view/View3d";
     import ModelList from "@/view/componts/ModelList";
+    import TexturexFrame from "@/view/page/TexturexFrame";
 
     export default {
         name: "App",
         data() {
-            return {count: 4}
+            return {}
         },
         components: {
+            TexturexFrame,
             ModelList,
             BottomBar,
             View3d,

@@ -1,6 +1,6 @@
 <template>
-    <div id="view3d">
-<canvas id="canvas" ref="canvas" ></canvas>
+    <div id="view3d" ref="view3d">
+
     </div>
 </template>
 
@@ -10,20 +10,26 @@
     import Scene3D from "@/util/Scene3D";
     import {OBJLoader} from "three/examples/jsm/loaders/OBJLoader"
     import {MTLLoader} from "three/examples/jsm/loaders/MTLLoader"
+    import defaultModel from "@/util/defaultModel";
+
+
     export default {
         name: "View3d",
         mounted() {
             this.init();
 
             eventBus.$on("changeShowModel",this.loadModel);
+            eventBus.$on("changeModelTexture",this.changeTexture);
 
-            // this.loadModel();
+            this.loadModel(defaultModel);
         },
 
         methods: {
             init() {
 
-                this.scene3d = new Scene3D(this.$refs.canvas);
+                this.scene3d = new Scene3D();
+
+                this.$refs.view3d.appendChild(this.scene3d.canvas);
 
                 this.loadmanager = new THREE.LoadingManager();
 
@@ -47,6 +53,11 @@
                     } );
 
 
+            },
+
+            changeTexture(textureobj){
+                console.log("huihui")
+                this.scene3d && this.scene3d.changeTexture(textureobj.url);
             }
         }
     }
@@ -59,11 +70,4 @@
         height:100%
     }
 
-    #canvas {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-    }
 </style>

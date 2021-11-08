@@ -2,55 +2,410 @@
   {
     "id": 1,
     "name": "1",
-    "ico": "/assets/modeltype/1.png",
-    "url":"/assets/textures/1.jpg"
+    "ico": "/assets/textures/1.jpg",
+    "url":"/assets/textures/1.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   },
   {
     "id": 2,
     "name": "2",
-    "ico": "/assets/textures/2.png",
-    "url":"/assets/textures/2.jpg"
+    "ico": "/assets/textures/2.jpg",
+    "url":"/assets/textures/2.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   },
   {
     "id": 3,
     "name": "3",
-    "ico": "/assets/textures/1.png",
-    "url":"/assets/textures/3.jpg"
+    "ico": "/assets/textures/3.jpg",
+    "url":"/assets/textures/3.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   },
   {
     "id": 4,
     "name": "4",
-    "ico": "/assets/textures/3.png",
-    "url":"/assets/textures/4.jpg"
+    "ico": "/assets/textures/4.jpg",
+    "url":"/assets/textures/4.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   },
   {
     "id": 5,
     "name": "5",
-    "ico": "/assets/textures/1.png",
-    "url":"/assets/textures/5.jpg"
+    "ico": "/assets/textures/5.jpg",
+    "url":"/assets/textures/5.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   },
   {
     "id": 6,
     "name": "6",
-    "ico": "/assets/textures/1.png",
-    "url":"/assets/textures/6.jpg"
+    "ico": "/assets/textures/6.jpg",
+    "url":"/assets/textures/6.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   },
   {
     "id": 7,
     "name": "7",
-    "ico": "/assets/textures/2.png",
-    "url":"/assets/textures/7.jpg"
+    "ico": "/assets/textures/7.jpg",
+    "url":"/assets/textures/7.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   },
   {
     "id": 8,
     "name": "8",
-    "ico": "/assets/textures/8.png",
-    "url":"/assets/textures/8.jpg"
+    "ico": "/assets/textures/8.jpg",
+    "url":"/assets/textures/8.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   },
   {
     "id": 9,
-    "name": "绿9",
-    "ico": "/assets/textures/1.png",
-    "url":"/assets/textures/9.jpg"
+    "name": "9",
+    "ico": "/assets/textures/9.jpg",
+    "url":"/assets/textures/9.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 10,
+    "name": "10",
+    "ico": "/assets/textures/10.jpg",
+    "url":"/assets/textures/10.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 11,
+    "name": "11",
+    "ico": "/assets/textures/11.jpg",
+    "url":"/assets/textures/11.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 12,
+    "name": "12",
+    "ico": "/assets/textures/12.jpg",
+    "url":"/assets/textures/12.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 13,
+    "name": "13",
+    "ico": "/assets/textures/13.jpg",
+    "url":"/assets/textures/13.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 14,
+    "name": "14",
+    "ico": "/assets/textures/14.jpg",
+    "url":"/assets/textures/14.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 15,
+    "name": "15",
+    "ico": "/assets/textures/15.jpg",
+    "url":"/assets/textures/15.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 16,
+    "name": "16",
+    "ico": "/assets/textures/16.jpg",
+    "url":"/assets/textures/16.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 17,
+    "name": "17",
+    "ico": "/assets/textures/17.jpg",
+    "url":"/assets/textures/17.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },{
+  "id": 18,
+  "name": "18",
+  "ico": "/assets/textures/18.jpg",
+  "url":"/assets/textures/18.jpg",
+  "size":"1*1",
+  "type": "1",
+  "style": "1",
+  "color": "1"
+},
+  {
+    "id": 19,
+    "name": "19",
+    "ico": "/assets/textures/19.jpg",
+    "url":"/assets/textures/19.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 20,
+    "name": "20",
+    "ico": "/assets/textures/20.jpg",
+    "url":"/assets/textures/20.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 21,
+    "name": "21",
+    "ico": "/assets/textures/21.jpg",
+    "url":"/assets/textures/21.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 22,
+    "name": "22",
+    "ico": "/assets/textures/22.jpg",
+    "url":"/assets/textures/22.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 23,
+    "name": "23",
+    "ico": "/assets/textures/23.jpg",
+    "url":"/assets/textures/23.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 24,
+    "name": "24",
+    "ico": "/assets/textures/24.jpg",
+    "url":"/assets/textures/24.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 25,
+    "name": "25",
+    "ico": "/assets/textures/25.jpg",
+    "url":"/assets/textures/25.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 26,
+    "name": "26",
+    "ico": "/assets/textures/26.jpg",
+    "url":"/assets/textures/26.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 27,
+    "name": "27",
+    "ico": "/assets/textures/27.jpg",
+    "url":"/assets/textures/27.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 28,
+    "name": "28",
+    "ico": "/assets/textures/28.jpg",
+    "url":"/assets/textures/28.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 29,
+    "name": "29",
+    "ico": "/assets/textures/29.jpg",
+    "url":"/assets/textures/29.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 30,
+    "name": "30",
+    "ico": "/assets/textures/30.jpg",
+    "url":"/assets/textures/30.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 31,
+    "name": "31",
+    "ico": "/assets/textures/31.jpg",
+    "url":"/assets/textures/31.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 32,
+    "name": "32",
+    "ico": "/assets/textures/32.jpg",
+    "url":"/assets/textures/32.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 33,
+    "name": "33",
+    "ico": "/assets/textures/33.jpg",
+    "url":"/assets/textures/33.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 34,
+    "name": "34",
+    "ico": "/assets/textures/34.jpg",
+    "url":"/assets/textures/34.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 35,
+    "name": "35",
+    "ico": "/assets/textures/35.jpg",
+    "url":"/assets/textures/35.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 36,
+    "name": "36",
+    "ico": "/assets/textures/36.jpg",
+    "url":"/assets/textures/36.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 37,
+    "name": "37",
+    "ico": "/assets/textures/37.jpg",
+    "url":"/assets/textures/37.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 38,
+    "name": "38",
+    "ico": "/assets/textures/38.jpg",
+    "url":"/assets/textures/38.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 39,
+    "name": "39",
+    "ico": "/assets/textures/39.jpg",
+    "url":"/assets/textures/39.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 40,
+    "name": "40",
+    "ico": "/assets/textures/40.jpg",
+    "url":"/assets/textures/40.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
+  },
+  {
+    "id": 41,
+    "name": "41",
+    "ico": "/assets/textures/41.jpg",
+    "url":"/assets/textures/41.jpg",
+    "size":"1*1",
+    "type": "1",
+    "style": "1",
+    "color": "1"
   }
 ]

@@ -7,6 +7,8 @@ export default new Vuex.Store({
         count: 0,
         menuindex:0,
         isShowModelList:false,
+        isshowTexturexFrame:false,
+        mytextures:[]
 
     },
     // commit触发，只能同步
@@ -22,6 +24,27 @@ export default new Vuex.Store({
 
         showModelList(state, show){
             state.isShowModelList = show;
+        },
+        showTexturexFrame(state, show){
+            state.isshowTexturexFrame = show;
+        },
+        addtexture(state,textures){
+            textures.forEach(texture =>{
+                if(state.mytextures.findIndex(item => item.id === texture.id)<0)
+                    state.mytextures.push(texture);
+            })
+
+
+        },
+        removetexture(state,textures){
+            textures.forEach(texture =>{
+                let index = state.mytextures.findIndex(item => item.id === texture.id);
+                if(index>0){
+                    state.mytextures.splice(index,1);
+                }
+            });
+
+
         }
     },
 

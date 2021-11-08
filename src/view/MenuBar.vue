@@ -2,11 +2,11 @@
     <div id="menu-bar">
         <button :class="{ selected: menuindex===0 }"
                 class="menu-btn"
-                @click="menuClick(0)">11
+                @click="menuClick(0)">模型
         </button>
         <button :class="{ selected: menuindex===1 }"
                 class="menu-btn"
-                @click="menuClick(1)">22
+                @click="menuClick(1)">面料
         </button>
     </div>
 </template>
@@ -39,9 +39,8 @@
     }
 
     .menu-btn {
-        width: 100px;
+        width: 70px;
         height: 32px;
-        margin-right: 20px;
         border-style: none;
         display: inline-block;
     }
